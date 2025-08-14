@@ -1,6 +1,6 @@
 import chalk from "chalk";
 import * as formeModule from './modules/forme.js';
-import { getJourAvantNoel } from "./modules/events.js";
+import { getJourAvantEvent } from "./modules/events.js";
 
 console.log(chalk.redBright('Exo 02.1 - Calcule de l\'aire et du périmetre'))
 const f1 = {
@@ -35,6 +35,13 @@ console.log(chalk.magentaBright('-----------------------------------------------
 
 console.log(chalk.redBright('Exo 02.2 - Calcule du nombre de journée'))
 
-const nbNoel = getJourAvantNoel();
-console.log(`Nombre de jour avant noel : ${nbNoel}`);
+
+// const nbFeteNat = getJourAvantEvent('FeteNat');
+// console.log(`Nombre de jour avant la fête nationnal : ${nbFeteNat}`);
+
+// const nbNoel = getJourAvantEvent('Noel');
+// console.log(`Nombre de jour avant noel : ${nbNoel}`);
+
+const nbEte = getJourAvantEvent('Ete');
+console.log(`Nombre de jour avant les vac d'été : ${nbEte}`);
 
